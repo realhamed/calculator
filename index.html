@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Calculator</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="" />
+    <meta http-equiv="refresh" content="" />
+    <base href="" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="calculator-container">
+      <div class="output">
+        <div class="previous-operand"></div>
+        <div class="current-operand"></div>
+      </div>
+      <div class="input-section">
+        <button onclick="clearAll()">AC</button>
+        <button onclick="deleteLastCharacter()">DEL</button>
+        <button onclick="compute()">=</button>
+        <button onclick="operation('/')">/</button>
+        <button onclick="appendCharacter('1')">1</button>
+        <button onclick="appendCharacter('2')">2</button>
+        <button onclick="appendCharacter('3')">3</button>
+        <button onclick="operation('*')">*</button>
+        <button onclick="appendCharacter('4')">4</button>
+        <button onclick="appendCharacter('5')">5</button>
+        <button onclick="appendCharacter('6')">6</button>
+        <button onclick="operation('+')">+</button>
+        <button onclick="appendCharacter('7')">7</button>
+        <button onclick="appendCharacter('8')">8</button>
+        <button onclick="appendCharacter('9')">9</button>
+        <button onclick="operation('-')">-</button>
+        <button class="dot-btn" onclick="appendCharacter('.')">.</button>
+        <button onclick="appendCharacter('0')">0</button>
+        <button onclick="appendCharacter('00')">00</button>
+        <button onclick="appendCharacter('000')">000</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
